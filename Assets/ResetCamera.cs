@@ -55,6 +55,8 @@ public class ResetCamera : MonoBehaviour {
     {
         var halfAngle = 0.5f * camera.fieldOfView;
         var radian = Mathf.Deg2Rad * halfAngle;
+        //fieldOfView是以height方向來測量!!
+        //Mathf.Tan(radian)=planeHalfHeight/z
         var z = planeHalfHeight / Mathf.Tan(radian);
         return z;
     }
