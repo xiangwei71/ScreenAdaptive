@@ -43,13 +43,14 @@ public class ResetCamera : MonoBehaviour {
         } 
     }
 
-    //用來算出佔滿整個Camera的Plane
+    
     void ResetPlane(float ratio,float z,Transform target)
     {
         target.localPosition = new Vector3(0, 0, z);
         target.localScale = new Vector3(ratio, 1, 1);
     }
 
+    //用來算出佔滿整個Camera height的Plane
     float findZtoFitCameraHeight()
     {
         var halfAngle = 0.5f * camera.fieldOfView;
