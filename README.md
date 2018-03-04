@@ -1,4 +1,4 @@
 # ScreenAdaptive
 Screen Adapitve in Perspective Camera
 
-Please Swith Build Setting to Android
+Please Switch Build Setting to Android
